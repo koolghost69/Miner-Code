@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const fs = require('fs')
 
 const { Database } = require("quickmongo");
-const mongo = new Database('mongodb+srv://DatabaseAccessBot:UxrGv6RkmCq26Ndk@cluster0.jxuwi.mongodb.net/chronoCoin.chronoCoin')
+const mongo = new Database('mongodb+srv://DatabaseAccessBot:UxrGv6RkmCq26Ndk@cluster0.jxuwi.mongodb.net/chronoCoin')
 const talkedRecently = new Set();
 
 const prefix = "-"
