@@ -33,3 +33,41 @@ if(account) {
     (async () => { 
         var times = 0   
     while (true) {
+
+        var int = Math.floor(Math.random() * 500)
+        sleep.msleep(100)
+        var times = times + 1
+        console.log(int + `| ${winning}`)
+        if(int === winning) {
+                await mongo.add(`${answer}.bal`, 1)
+            sleep.msleep(500)
+            console.log('you have got a coin')
+            
+        }
+    } 
+})();
+} else if (key !== account) return console.log('Your key does not match the key you specified')
+});
+    }else if(!account) return console.log('No account found with that ID!')
+
+})();
+});
+
+//7
+//38
+//229
+//1819
+//643
+//84
+//138
+//890
+//706
+//336
+
+//average time out of 10 = 409, average seconds is 40
+
+
+
+
+
+
